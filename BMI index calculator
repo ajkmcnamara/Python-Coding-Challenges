@@ -1,0 +1,12 @@
+#Program to calculate Body Mass Index from my given height & weight using Data types & Mathematical Operations
+
+height=1.63 cm
+weight=55 kg
+
+BMI=weight/height**2
+BMI=55/1.63**2
+
+#convert the result to a whole number using int fucntion
+print(int(BMI))
+
+#my BMI is 20
