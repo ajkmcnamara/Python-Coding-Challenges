@@ -28,9 +28,9 @@ def on_press(key):
 
 #Then we do exactly opposite and use condition on_release, the method is used to identify when the button is released
 
-def on_press(key):
+def on_release(key):
    with open(output,'a')as f:
-      f.write({0}pressed\n.format(key)
+      f.write({0}released\n.format(key)
       f.close()
   if key===key.esc
  # if key is equal to Escape
